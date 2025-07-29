@@ -9,7 +9,7 @@ if (!isset($_SESSION['visit_count'])) {
 $_SESSION['visit_count']++;
 
 // Handle form submission for welcome message
-$welcome_message = "Welcome to Our Dynamic Website!";
+$welcome_message = "Welcome to Our Dynamic **PHP** Website!";
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['username'])) {
     $username = htmlspecialchars($_POST['username']);
     $welcome_message = "Hello, $username! Welcome to our site!";
